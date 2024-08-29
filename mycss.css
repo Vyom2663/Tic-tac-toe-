@@ -1,0 +1,105 @@
+/* style.css */
+
+/* Reset some default styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+    box-sizing: border-box;
+  }
+  
+  /* Hide message container initially */
+  .msg-container.hide {
+    display: none;
+  }
+  
+  /* Center message container */
+  .msg-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  /* Main title styling */
+  main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.5rem;
+  }
+  
+  /* Container styling to center the game board */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Game board styling */
+  .game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+  }
+  
+  /* Styling for each box (button) */
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #4CAF50;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+  }
+  
+  /* Reset and New Game buttons styling */
+  #reset-btn, #new-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  #reset-btn:hover, #new-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  /* Styling for the message paragraph */
+  #msg {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+  }
+  
